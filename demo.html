@@ -7,14 +7,25 @@
 	<style>	
 		img{
 			display:block;
+			margin-top:10px;
 			width:200px;
 		}
 	</style>
 	<body>
-		<input type="file" accept="image/*" multiple id="upload" onchange="previewImg(this,'preview-img')">
+		<input type="file" accept="image/*" multiple id="upload">
 		<img src="" alt="" id="preview-img">
 	</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="./imgUpload.js"></script>
+<script>
+	var picUrl = ImgUpload({
+		target:$('#upload'),
+		success:function(url){
+			console.log(url);
+			$('#preview-img').attr('src',url.src);
+		}
+	});
+</script>
 <script>
 </script>
 </html>
