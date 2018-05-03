@@ -1,13 +1,19 @@
 ### 原理介绍
-移动端图片上传，通过FileReader生成base64图片资源进行预览，通过canvas进行图片的压缩，将图片url转换成Blob对象上传。
+移动端图片上传预览压缩插件，通过FileReader生成base64图片资源进行预览，通过canvas进行图片的压缩，将图片url转换成Blob对象上传。
 ### 注意事项
-```
-移动端file有兼容上的问题
-<input type="file" id="upload" class="upload" accept="image/*" multiple />
-解决ios 图片大于2000000像素无法用drawImage的bug
-使用瓦片绘制
-
-```
+1、移动端file有兼容上的问题
+解决方案:<input type="file" id="upload" class="upload" accept="image/*" multiple />
 ### 使用说明
-这个只是一个移动端预览压缩上传图片实现的demo，至于兼容和bug肯定会有，大家可以自己修改和扩展，可以推荐一个比较成熟的https://github.com/think2011/localResizeIMG
+本插件基于jquery开发,所以使用前需要引入jquery
+```
+ImgUpload({
+    target:$('#upload'),//file文件
+    maxSize:xxx,//上传最大值 单位kb 默认500k
+    success:function(data){//预览成功的函数
+    }
+})
+```
+
+### 特别说明
+这个只是一个实现的demo，至于兼容和bug肯定会有，大家可以自己修改和扩展，可以推荐一个比较成熟的https://github.com/think2011/localResizeIMG
 
