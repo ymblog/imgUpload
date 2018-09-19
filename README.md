@@ -1,4 +1,5 @@
-### 原理介绍
+#移动端图片预览压缩
+### 关于
 移动端图片上传预览压缩插件，通过FileReader生成base64图片资源进行预览，通过canvas进行图片的压缩，将图片url转换成Blob对象上传。
 ### 注意事项
 1、移动端file有兼容上的问题
@@ -13,7 +14,10 @@ ImgUpload({
     }
 })
 ```
-
+### 传送门
+[移动端图片预览压缩](http://lktop.coding.me/ymblog/ym/plugin/)
 ### 特别说明
-这个只是一个实现的demo，至于兼容和bug肯定会有，大家可以自己修改和扩展，可以推荐一个比较成熟的https://github.com/think2011/localResizeIMG
+这个只是一个实现的demo，至于兼容和bug会有的，大家可以自己修改和扩展，可以推荐一个比较成熟的https://github.com/think2011/localResizeIMG
+### 感谢
+喜欢的同学可以顺手给个star支持一下，谢谢！！
 
