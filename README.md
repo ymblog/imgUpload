@@ -15,7 +15,7 @@ ImgUpload({
 })
 ```
 ### 传送门
-[移动端图片预览压缩](http://lktop.coding.me/ymblog/ym/plugin/)
+[移动端图片预览压缩](https://ymblog.github.io/plugin/)
 ### 特别说明
 这个只是一个实现的demo，至于兼容和bug会有的，大家可以自己修改和扩展，可以推荐一个比较成熟的https://github.com/think2011/localResizeIMG
 ### 感谢
